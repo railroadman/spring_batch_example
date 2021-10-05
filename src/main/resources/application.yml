@@ -1,0 +1,17 @@
+spring:
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
+
+  datasource:
+    url: jdbc:sqlserver://localhost:58256;databaseName=batch
+    username: sa
+    password: pepper2k
+    initialize: true
+
+file:
+  input: src/main/resources/input.csv
+  output: src/main/resources/output.json
+  output2: src/main/resources/output2.json
